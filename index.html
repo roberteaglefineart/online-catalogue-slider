@@ -15,13 +15,13 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-    <link rel="stylesheet" href="css/edit.css" />
+    <link rel="stylesheet" href="css/slick-edit.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <div class="slider">
       <!-- Slide 1 -->
-      <div class="container">
+      <div>
         <div class="container">
           <img src="images/Wedlake Hatton, Jacqueline _hidden.jpg" alt="" />
           <p>Hidden by Jacqueline Hatton</p>
@@ -75,14 +75,18 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script>
-      $('.container').css('height', $(window).height() + 'px')
       $(document).ready(function () {
+        $('.container').css('height', $(window).height() + 'px')
         $('.slider').slick({
           infinite: true,
           slidesToShow: 2,
           slidesToScroll: 2,
           dots: true,
           speed: 1800,
+        })
+
+        $(window).resize(function () {
+          $('.container').css('height', $(window).height() + 'px')
         })
       })
     </script>

@@ -1,19 +1,19 @@
 @font-face {
   font-family: 'BankGothic Md BT Medium';
-  src: url('/assets/bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.eot'); /* IE9*/
-  src: url('/assets/bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.eot?#iefix')
+  src: url('../../bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.eot'); /* IE9*/
+  src: url('../../bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.eot?#iefix')
       format('embedded-opentype'),
     /* IE6-IE8 */
-      url('/assets/bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.woff2')
+      url('../../bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.woff2')
       format('woff2'),
     /* chrome、firefox */
-      url('/assets/bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.woff')
+      url('../../bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.woff')
       format('woff'),
     /* chrome、firefox */
-      url('/assets/bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.ttf')
+      url('../../bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.ttf')
       format('truetype'),
     /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-      url('/assets/bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.svg#BankGothic Md BT Medium')
+      url('../../bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.svg#BankGothic Md BT Medium')
       format('svg'); /* iOS 4.1- */
 }
 

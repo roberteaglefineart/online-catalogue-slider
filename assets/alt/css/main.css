@@ -10,10 +10,27 @@ body {
   margin: 0;
 }
 
+@font-face {
+  font-family: 'BankGothic Md BT Medium';
+  src: url('/assets/bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.eot'); /* IE9*/
+  src: url('/assets/bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */
+      url('/assets/bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.woff2')
+      format('woff2'),
+    /* chrome、firefox */
+      url('/assets/bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.woff')
+      format('woff'),
+    /* chrome、firefox */
+      url('/assets/bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.ttf')
+      format('truetype'),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url('/assets/bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.svg#BankGothic Md BT Medium')
+      format('svg'); /* iOS 4.1- */
+}
+
 .wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .container {
@@ -34,14 +51,14 @@ body {
 
 @media only screen and (max-width: 600px) {
   .title {
-    font-size: 8pt !important;
+    font-size: 9pt !important;
   }
 }
 
 .title {
   display: flex;
   justify-content: center;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'BankGothic Md BT Medium';
   color: darkgreen;
   font-size: 11pt;
 }
@@ -51,13 +68,14 @@ body {
   display: flex;
   justify-content: center;
   z-index: 2;
-  font-family: 'Orbitron', sans-serif;
 }
 
 .nav-item {
   padding: 0 10px;
   text-decoration: none;
   color: black;
+  font-family: 'BankGothic Md BT Medium';
+  font-size: 11pt;
 }
 
 img {
@@ -67,8 +85,8 @@ img {
 }
 
 p {
-  font-family: 'Poiret One', cursive;
-  font-size: 9.5pt;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 9pt;
   text-align: center;
 }
 

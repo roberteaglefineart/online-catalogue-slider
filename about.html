@@ -71,10 +71,12 @@
     <script src="assets/alt/scripts/jquery.magnific-popup.min.js"></script>
     <script>
       $(document).ready(function () {
-        $('.container').css('height', $(window).height() + 'px')
+        let height = $(window).height() - 30
+        $('.container').css('height', height + 'px')
 
         $(window).resize(function () {
-          $('.container').css('height', $(window).height() + 'px')
+          height = $(window).height() - 30
+          $('.container').css('height', height + 'px')
         })
 
         $('.image').magnificPopup({

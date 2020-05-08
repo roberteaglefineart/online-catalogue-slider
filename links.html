@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artists who love trees</title>
+    <link
+      rel="preload"
+      href="assets/bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/alt/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/alt/css/main.css" />
+  </head>
+  <body>
+    <div class="header">
+      <!-- Title -->
+      <div class="title">
+        <h1>Artists who love trees</h1>
+      </div>
+      <!-- Navbar -->
+      <div class="navbar">
+        <a class="nav-item" href="/about.html">About</a>
+        <a class="nav-item" href="">Video</a>
+        <a class="nav-item" href="/">Catalogue</a>
+        <a class="nav-item" href="">Contact</a>
+        <a class="nav-item" href="/link.html">Links</a>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="container" style="width: 50%;">
+        <img
+          class="image"
+          href="assets/alt/images/0736_Rolt,David_Ghostly-treescape.jpg"
+          src="assets/alt/images/0736_Rolt,David_Ghostly-treescape.jpg"
+          style="width: 60%;"
+        />
+        <p>
+          David Rolt<br /><i>Ghostly treescape</i><br />Watercolour and ink<br />27
+          x 30 cm<br />£295
+        </p>
+      </div>
+      <div class="container" style="width: 50%;">
+        <p style="font-size: 12pt;">
+          Over the past few centuries<br />
+          trees have been advancing through art,<br />
+          stepping out of the background<br />and<br />via an ever-growing
+          number of painters<br />
+          occupying centre-canvas.<br /><br />
+          The Arborealists are a diverse group of contemporary artists<br />
+          formed just a few years ago, who take inspiration from trees.<br /><br />
+          David Rolt, born over 100 years ago,<br />
+          was an English society portrait painter<br />
+          who painted people for a living - and painted trees for love.<br />
+          A loner, a forerunner, a proto-Arborealist.<br /><br />
+          We hope you will enjoy their work.<br /><br />
+          Robert Eagle<br />
+          roberteaglefineart.co.uk
+        </p>
+      </div>
+    </div>
+
+    <script src="assets/alt/scripts/jquery-3.5.0.min.js"></script>
+    <script src="assets/alt/scripts/jquery.magnific-popup.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.container').css('height', $(window).height() + 'px')
+
+        $(window).resize(function () {
+          $('.container').css('height', $(window).height() + 'px')
+        })
+
+        $('.image').magnificPopup({
+          type: 'image',
+          mainClass: 'mfp-with-zoom',
+          zoom: {
+            enabled: true,
+            duration: 600,
+            easing: 'ease-in-out',
+          },
+        })
+      })
+    </script>
+  </body>
+</html>

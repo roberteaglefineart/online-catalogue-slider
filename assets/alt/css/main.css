@@ -52,6 +52,9 @@ body {
   .title {
     display: none !important;
   }
+  .container {
+    margin-top: 30px;
+  }
   p,
   .about {
     font-size: 8pt !important;

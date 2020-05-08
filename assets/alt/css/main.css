@@ -35,6 +35,11 @@ body {
   overflow: hidden;
 }
 
+.img-holder {
+  display: flex;
+  justify-content: center;
+}
+
 .header {
   position: fixed;
   left: 50%;

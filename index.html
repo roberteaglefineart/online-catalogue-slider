@@ -913,7 +913,13 @@
     <script src="assets/alt/scripts/jquery.magnific-popup.min.js"></script>
     <script>
       $(document).ready(function () {
-        let height = $(window).height() - 30
+        let height
+        if ($(window).width() > 850) {
+          height = $(window).height()
+        } else {
+          height = $(window).height() - 30
+        }
+
         $('.container').css('height', height + 'px')
         $('.slider').slick({
           infinite: true,
@@ -924,7 +930,11 @@
         })
 
         $(window).resize(function () {
-          height = $(window).height() - 30
+          if ($(window).width() > 850) {
+            height = $(window).height()
+          } else {
+            height = $(window).height() - 30
+          }
           $('.container').css('height', height + 'px')
         })
 

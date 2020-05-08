@@ -19,7 +19,7 @@
 
 body {
   background-image: linear-gradient(#e6fff2, mintcream);
-  overflow: hidden;
+  /* overflow: hidden; */
   margin: 0;
 }
 

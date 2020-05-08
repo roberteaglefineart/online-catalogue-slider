@@ -63,7 +63,7 @@ body {
     margin-top: 5px;
   }
   .nav-item {
-    font-size: 9pt !important;
+    font-size: 7pt !important;
   }
 }
 
@@ -88,6 +88,7 @@ body {
   color: black;
   font-family: 'BankGothic Md BT Medium';
   font-size: 11pt;
+  text-align: center;
 }
 
 img {

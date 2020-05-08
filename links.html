@@ -126,6 +126,10 @@
     <script src="assets/alt/scripts/jquery-3.5.0.min.js"></script>
     <script>
       $(document).ready(function () {
+        if ($(window).height() < 400) {
+          $('.title').css('display', 'none')
+        }
+
         let height
         if ($(window).width() > 850) {
           height = $(window).height()
@@ -135,6 +139,13 @@
         $('.container').css('height', height + 'px')
 
         $(window).resize(function () {
+          if ($(window).height() < 400) {
+            $('.title').css('display', 'none')
+          }
+          if ($(window).height() > 400) {
+            $('.title').css('display', 'flex')
+          }
+
           if ($(window).width() > 850) {
             height = $(window).height()
           } else {

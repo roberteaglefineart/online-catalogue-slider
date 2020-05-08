@@ -913,7 +913,9 @@
     <script src="assets/alt/scripts/jquery.magnific-popup.min.js"></script>
     <script>
       $(document).ready(function () {
-        $('.container').css('height', $(window).height() + 'px')
+        let height = $(window).height() - 30
+        console.log(height)
+        $('.container').css('height', height + 'px')
         $('.slider').slick({
           infinite: true,
           slidesToShow: 1,
@@ -923,7 +925,7 @@
         })
 
         $(window).resize(function () {
-          $('.container').css('height', $(window).height() - 30 + 'px')
+          $('.container').css('height', height + 'px')
         })
 
         $('.image').magnificPopup({

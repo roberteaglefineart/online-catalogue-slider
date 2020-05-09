@@ -33,7 +33,7 @@
       </div>
       <br /><br />
       <!-- Purchase instruction -->
-      <p style="font-size: 12pt;">
+      <p id="p-ins" style="font-size: 12pt;">
         If you would like to purchase a work or find out more about it, please
         click on <a href="contact.html">CONTACT</a>
       </p>
@@ -128,6 +128,7 @@
       $(document).ready(function () {
         if ($(window).height() < 400) {
           $('.title').css('display', 'none')
+          $('#p-ins').css('display', 'none')
         }
 
         let height
@@ -141,9 +142,11 @@
         $(window).resize(function () {
           if ($(window).height() < 400) {
             $('.title').css('display', 'none')
+            $('#p-ins').css('display', 'none')
           }
           if ($(window).height() > 400) {
             $('.title').css('display', 'flex')
+            $('#p-ins').css('display', 'block')
           }
 
           if ($(window).width() > 850) {

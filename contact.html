@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artists who love trees</title>
+    <link
+      rel="preload"
+      href="assets/bank-gothic-med/adfd298e421945768d7bf13da3ee8a45.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/alt/css/main.css" />
+  </head>
+  <body>
+    <div class="header">
+      <!-- Title -->
+      <div class="title">
+        <h1>Artists who love trees</h1>
+      </div>
+      <!-- Navbar -->
+      <div class="navbar">
+        <a class="nav-item" href="about.html">About</a>
+        <a class="nav-item" href="video.html">Video</a>
+        <a class="nav-item" href="index.html">Catalogue</a>
+        <a class="nav-item" href="contact.html">Contact</a>
+        <a class="nav-item" href="links.html">Links</a>
+      </div>
+      <br /><br />
+    </div>
+    <div class="container">
+      <p style="font-size: 12pt;">
+        Please contact Robert Eagle<br />on
+        <a href="tel:020-8995-1884">020-8995-1884</a><br />
+        or email
+        <a href="mailto:robert@roberteaglefineart.co.uk"
+          >robert@roberteaglefineart.co.uk</a
+        ><br /><br />Robert Eagle Fine Art<br />15 Marborough Road<br />London<br />W4
+        4EU
+      </p>
+    </div>
+
+    <script src="assets/alt/scripts/jquery-3.5.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        if ($(window).height() < 400) {
+          $('.title').css('display', 'none')
+        }
+
+        let height
+        if ($(window).width() > 850) {
+          height = $(window).height()
+        } else {
+          height = $(window).height() - 30
+        }
+        $('.container').css('height', height + 'px')
+
+        $(window).resize(function () {
+          if ($(window).height() < 400) {
+            $('.title').css('display', 'none')
+          }
+          if ($(window).height() > 400) {
+            $('.title').css('display', 'flex')
+          }
+
+          if ($(window).width() > 850) {
+            height = $(window).height()
+          } else {
+            height = $(window).height() - 30
+          }
+          $('.container').css('height', height + 'px')
+        })
+      })
+    </script>
+  </body>
+</html>

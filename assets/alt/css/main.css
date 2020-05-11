@@ -91,7 +91,7 @@ body {
 
 img {
   width: 50%;
-  height: auto;
+  /* height: auto; */
   cursor: zoom-in;
 }
 
